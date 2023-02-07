@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Formulário de Pesquisa</title>
+    <link rel= "stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+  </head>    
+  <body>
+
+   <header class="header"><strong>
+    <h1 id="title">Felipe Alves Survey Form</h1>
+    <p id="description">Obrigado por me ajudar no des olvimento web!</p></strong>
+   </header>
+   <div class="container-tudo">
+    <form id="survey-form" action="#">
+      <fieldset class="basicas">
+      <label id="name-label" class="informacoes-basicas">Nome: <input type="text" id="name" name="nome" placeholder="Digite seu nome aqui" required></label>
+      <label id="email-label" class="informacoes-basicas">Email: <input type="email" id="email" name="email" placeholder="Digite seu e-mail aqui" required></label>
+      <label id="number-label" class="informacoes-basicas">Idade (Opcional): <input type="number" id="number" name="age" min="10" max="120" placeholder="Idade"></label>
+    </fieldset>
+    <fieldset class="ocupacao-fieldset">
+      <label>O que você faz?  
+      <select id="dropdown" name="current-occupation" class="ocupacao">
+            <option value="">Selecione uma opção</option>
+            <option value="1">Estudante</option>
+            <option value="2">Emprego fixo</option>
+            <option value="3">Emprego temporário</option>
+            <option value="4">Prefiro não dizer</option>
+            <option value="5">Outro</option>
+        </select>
+      </label>
+    </fieldset>
+      <fieldset class="interesses">Tem interesse em aprender programação?
+        <label><input type="radio" name="recomendaria" value="1" checked class="interesse">Sim</label>
+        <label><input type="radio" name="recomendaria" value="2" class="interesse">Não</label>
+        <label><input type="radio" name="recomendaria" value="3" class="interesse">Talvez</label>
+      </fieldset>
+      <fieldset class="tecnologias">Em quais tecnologias você tem interesse?
+          <label><input type="checkbox" name="tecnologias" value="1" class="interesses-futuros"> HTML/CSS</label>
+          <label><input type="checkbox" name="tecnologias" value="2" class="interesses-futuros"> JavaScript e suas bibliotecas (React, TypeScript, jQuery)</label>
+          <label><input type="checkbox" name="tecnologias" value="3" class="interesses-futuros"> BootStrap</label>
+          <label><input type="checkbox" name="tecnologias" value="4" class="interesses-futuros"> Git, GitLab</label>
+          <label><input type="checkbox" name="tecnologias" value="5" class="interesses-futuros"> PHP, Java, linguagens back-end</label>
+          <label><input type="checkbox" name="tecnologias" value="6" class="interesses-futuros"> Outras</label>
+      </fieldset>
+      <fieldset class="comentario">
+      <label>Algum comentário a adicionar?
+        <textarea name="comentario" rows="3" cols="30" placeholder="Adicione aqui o seu comentário ou observação"></textarea>
+      </label>
+      </fieldset>
+      <label><input id="submit" type="submit" name="Submit"></label>
+    </form>
+</div>
+  </body>
+</html>

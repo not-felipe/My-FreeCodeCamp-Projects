@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body::-webkit-scrollbar {
+    width: 5px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #24252A;        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #0088a9;    
+    border-radius: 20px;       
+    border: 3px #edf0f1;  
+  }
+
+
+                                                                    /*HEADER */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(36, 37, 42, 0.9);
+    padding: 1vw 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-img{
+    cursor: pointer;
+    padding-right: .7vw;
+    width: 15rem;
+    transition: all 0.3s ease 0s;
+}
+
+#nav-list{
+    gap: 10vw;
+    margin-right: 10vw;
+    display: inline-flex;
+    list-style: none;
+}
+
+#nav-list li a{
+    transition: all 0.3s ease 0s;
+}
+
+#nav-list li a:hover{
+    color: #0088a9;
+}
+
+#submit{
+    font-family: Montserrat;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;   
+    border-bottom: 1px solid white;
+}
+
+button{
+    font-family: Montserrat;
+    color: white;
+    padding: 0.5vw 1.25vw;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;   
+}
+
+button:hover, #submit:hover{
+    background-color: rgba(0, 136, 169, 0.5);
+}
+
+
+                                                /* BODY */
+
+                                                
+
+body{
+    background-color: #24252A;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 100%;
+}
+
+
+#video-section{
+    transition: all 0.3s ease 0s;
+}
+
+.div-center-video{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 30vw;
+}
+
+#video{
+    height: 100%;
+    width: 50%;
+}
+
+
+.titulo{
+    padding: 20px;
+    font-family: Montserrat,sans-serif;
+    color: #0088a9;
+    text-align: center;
+}
+
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+#form{
+    padding-bottom: 20px;
+}
+
+input[type="email"]{
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid #0088a9;
+    font-family: Montserrat, sans-serif;
+
+}
+
+#socials{
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -80px;
+    margin-bottom: 30px;
+    padding-top: 90px;
+}
+
+.fab{
+    font-size: clamp(15px, 1.8em, 30px);
+}
+
+h2{
+    color: #0088a9;
+}
+
+#sobre{
+    font-family: Montserrat, sans-serif;   
+}
+
+#sobre p{
+    color: white;
+    font-weight: normal;
+}
+
+#sobre h2{
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section-sobre{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}  
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+footer p{
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 0.7em;
+}
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1280px){
+    #video{
+        width: 70%;
+        height: 40vw;
+    }
+    header{
+        width: 100vw;
+    }
+    li, a, button{
+        font-size: 12px;
+    }
+    #header-img{
+        width: 15rem;
+    }
+    #nav-list{
+        display: block;
+    }
+    .section-sobre{
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        margin-top: 70px;
+    } 
+
+}
+
+@media only screen and (max-width: 640px){
+    #video{
+        width: 100%;
+        height: 50vw;
+    }
+    header{
+        width: 100%;
+    }
+    li, a, button{
+        font-size: 10px;
+    }
+    #header-img{
+        width: 9rem;
+    }
+    .section-sobre{
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        margin-top: 70px;
+    } 
+
+}
